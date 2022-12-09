@@ -31,7 +31,7 @@
  messaging.onBackgroundMessage(function(payload) { 
    console.log( "[firebase-messaging-sw.js] Received background message ",  payload );
   const notificationTitle = 'payload.notification.title';
-  const notificationOptions = { body: 'payload.notification.body', image: payload.notification.image };
+  const notificationOptions = { body: 'payload.notification.body',icon: 'https://issyoo.github.io/IMG_20221121_171539.jpg', image: payload.notification.image };
   
    self.registration.showNotification(notificationTitle,  notificationOptions); 
  });
